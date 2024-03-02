@@ -1,0 +1,445 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorDeOpiniones",
+    "dateExported": "2024-03-10T17:03:29.687Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "ee70fb41-5514-4ad5-b01b-49eacaf6d899",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-03-10T08:01:16.205Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "d9db3955-a5fe-43ee-a34c-210041aa5282",
+            "name": "Publication",
+            "containerId": "",
+            "created": "2024-03-10T08:03:49.011Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "99796885-7ed7-4bed-a6e2-3686a7b6e104",
+            "name": "Category",
+            "containerId": "",
+            "created": "2024-03-10T08:03:57.195Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "e5c629f0-a55c-4e54-b2ba-3cfc5160076e",
+            "name": "Comment",
+            "containerId": "",
+            "created": "2024-03-10T08:04:04.395Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "b9a408f8-02e7-4e44-9958-6d771a4086e2",
+            "colId": "7230a1e5-48c6-4543-94b0-8a6277a46bb0",
+            "containerId": "ee70fb41-5514-4ad5-b01b-49eacaf6d899",
+            "name": "Register",
+            "url": "localhost:3080/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-10T08:01:21.174Z",
+            "modified": "2024-03-10T08:03:08.879Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Carlos"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Argueta"
+                    },
+                    {
+                        "name": "email",
+                        "value": "cargueta-2021622"
+                    },
+                    {
+                        "name": "username",
+                        "value": "cargueta"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "11223344"
+                    },
+                    {
+                        "name": "addres",
+                        "value": "asdasdasd"
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "cc13ba76-fa7d-4161-8c7d-a386ef846ea5",
+            "colId": "7230a1e5-48c6-4543-94b0-8a6277a46bb0",
+            "containerId": "ee70fb41-5514-4ad5-b01b-49eacaf6d899",
+            "name": "Login",
+            "url": "localhost:3080/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-10T08:04:14.923Z",
+            "modified": "2024-03-10T08:04:48.280Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "cargueta"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "160d3f6d-76c0-46b3-a2c5-d19b6511ed3d",
+            "colId": "7230a1e5-48c6-4543-94b0-8a6277a46bb0",
+            "containerId": "ee70fb41-5514-4ad5-b01b-49eacaf6d899",
+            "name": "Update",
+            "url": "localhost:3080/update/",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-10T08:05:03.930Z",
+            "modified": "2024-03-10T08:06:48.059Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "password",
+                        "value": ""
+                    },
+                    {
+                        "name": "oldpassword",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "71cb732f-8475-45a0-aeb2-59259dc67ae1",
+            "colId": "7230a1e5-48c6-4543-94b0-8a6277a46bb0",
+            "containerId": "d9db3955-a5fe-43ee-a34c-210041aa5282",
+            "name": "NewPublication",
+            "url": "localhost:3080/publication/newPublication",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-03-10T16:47:53.278Z",
+            "modified": "2024-03-10T16:49:14.367Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": ""
+                    },
+                    {
+                        "name": "category",
+                        "value": ""
+                    },
+                    {
+                        "name": "content",
+                        "value": ""
+                    },
+                    {
+                        "name": "user",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "2b051065-5594-41ea-ab55-86b1b5b52df0",
+            "colId": "7230a1e5-48c6-4543-94b0-8a6277a46bb0",
+            "containerId": "d9db3955-a5fe-43ee-a34c-210041aa5282",
+            "name": "Update",
+            "url": "localhost:3080/publication/update/",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-03-10T16:49:32.909Z",
+            "modified": "2024-03-10T16:53:07.525Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "data",
+                        "value": ""
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "a7c3e353-af8c-4f42-914d-1cd4ce3edb39",
+            "colId": "7230a1e5-48c6-4543-94b0-8a6277a46bb0",
+            "containerId": "d9db3955-a5fe-43ee-a34c-210041aa5282",
+            "name": "Get",
+            "url": "localhost:3080/publication/get",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-03-10T16:49:45.933Z",
+            "modified": "2024-03-10T16:52:25.798Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "0142a03f-f431-4117-af15-a5bbc9f52365",
+            "colId": "7230a1e5-48c6-4543-94b0-8a6277a46bb0",
+            "containerId": "d9db3955-a5fe-43ee-a34c-210041aa5282",
+            "name": "Delete",
+            "url": "localhost:2880/publication/delete/",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-03-10T16:49:51.468Z",
+            "modified": "2024-03-10T16:53:32.840Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "deata",
+                        "value": ""
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "d04d8775-7df1-4b7e-96ad-1caddd058480",
+            "colId": "7230a1e5-48c6-4543-94b0-8a6277a46bb0",
+            "containerId": "99796885-7ed7-4bed-a6e2-3686a7b6e104",
+            "name": "Create",
+            "url": "localhost:3080/category/save",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-03-10T16:50:03.325Z",
+            "modified": "2024-03-10T16:54:20.335Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": ""
+                    },
+                    {
+                        "name": "description",
+                        "value": ""
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "6874bbfd-ba42-45ac-b741-2a0fb770c192",
+            "colId": "7230a1e5-48c6-4543-94b0-8a6277a46bb0",
+            "containerId": "99796885-7ed7-4bed-a6e2-3686a7b6e104",
+            "name": "Get",
+            "url": "localhost:3080/category/get",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-10T16:50:14.540Z",
+            "modified": "2024-03-10T16:54:43.675Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "137c078d-593e-4c00-9163-74c7db1ca32b",
+            "colId": "7230a1e5-48c6-4543-94b0-8a6277a46bb0",
+            "containerId": "99796885-7ed7-4bed-a6e2-3686a7b6e104",
+            "name": "Delete",
+            "url": "localhost:3080/category/delete/",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-03-10T16:50:25.300Z",
+            "modified": "2024-03-10T16:55:21.900Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "data",
+                        "value": ""
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "29004a99-9a6d-4407-9940-bf9a47e8e94f",
+            "colId": "7230a1e5-48c6-4543-94b0-8a6277a46bb0",
+            "containerId": "e5c629f0-a55c-4e54-b2ba-3cfc5160076e",
+            "name": "Add",
+            "url": "localhost:3080/comment/addC",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-03-10T16:50:33.204Z",
+            "modified": "2024-03-10T16:56:15.020Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "content",
+                        "value": ""
+                    },
+                    {
+                        "name": "user",
+                        "value": ""
+                    },
+                    {
+                        "name": "publication",
+                        "value": ""
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "2ed75ee0-6185-4321-a060-f4d04824bcd4",
+            "colId": "7230a1e5-48c6-4543-94b0-8a6277a46bb0",
+            "containerId": "e5c629f0-a55c-4e54-b2ba-3cfc5160076e",
+            "name": "Update",
+            "url": "localhost:3080/comment/updateComment/",
+            "method": "PUT",
+            "sortNum": 130000,
+            "created": "2024-03-10T16:50:43.716Z",
+            "modified": "2024-03-10T16:56:52.773Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "content",
+                        "value": ""
+                    }
+                ]
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "d1c2a65f-26c5-4d26-8b93-81bc333b04bc",
+            "colId": "7230a1e5-48c6-4543-94b0-8a6277a46bb0",
+            "containerId": "e5c629f0-a55c-4e54-b2ba-3cfc5160076e",
+            "name": "Delete",
+            "url": "localhost:3080/comment/deleteComment/",
+            "method": "DELETE",
+            "sortNum": 140000,
+            "created": "2024-03-10T16:50:52.915Z",
+            "modified": "2024-03-10T16:57:54.370Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": ""
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "data",
+                        "value": ""
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
